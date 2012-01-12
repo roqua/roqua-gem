@@ -18,6 +18,14 @@ module RoQua
       Time.parse(attributes["created_at"])
     end
 
+    def updated_at
+      Time.parse(attributes["updated_at"])
+    end
+
+    def completed_at
+      Time.parse(attributes["completed_at"])
+    end
+
     def method_missing(name, *args)
       @attributes.fetch(name.to_s)
     end

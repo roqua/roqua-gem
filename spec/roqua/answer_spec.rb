@@ -25,6 +25,18 @@ describe RoQua::Answer do
     end
   end
 
+  describe "#updated_at" do
+    it "returns a Time object" do
+      RoQua::Answer.new("updated_at" => "2011-03-17T11:07:19Z").updated_at.should be_a(Time)
+    end
+  end
+
+  describe "#completed_at" do
+    it "returns a Time object" do
+      RoQua::Answer.new("completed_at" => "2011-03-17T11:07:19Z").completed_at.should be_a(Time)
+    end
+  end
+
   describe "other attributes" do
     it "looks up in the given attributes" do
       attributes = {"something" => stub}
