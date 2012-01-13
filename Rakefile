@@ -15,11 +15,11 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "roqua-gem"
-  gem.homepage = "http://github.com/marten/roqua-gem"
+  gem.homepage = "http://github.com/roqua/roqua-gem"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "marten@veldthuis.com"
+  gem.summary = %Q{API client gem for RoQua}
+  gem.description = %Q{A wrapper for the RoQua API (internal usage only for now)}
+  gem.email = "team@roqua.nl"
   gem.authors = ["Marten Veldthuis"]
   # dependencies defined in Gemfile
 end
