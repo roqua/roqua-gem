@@ -1,9 +1,13 @@
 module RoQua
   class Site
     attr_accessor :base_url
+    attr_accessor :username
+    attr_accessor :password
 
-    def initialize(base_url)
+    def initialize(base_url, username, password)
       self.base_url = base_url
+      self.username = username
+      self.password = password
     end
 
     def answers(options = {})
