@@ -7,10 +7,8 @@ describe RoQua::Site do
   let(:site) { RoQua::Site.new(base_url, username, password) }
 
   describe "#initialize" do
-    it "takes a base url, a username and a password" do
-      site.base_url.should == base_url
-      site.username.should == username
-      site.password.should == password
+    it "takes a base url a username and a password" do
+      site.should be_a(RoQua::Site)
     end
   end
 

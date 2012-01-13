@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://rgoc.roqua.dev/api/v1/patients/123/questionnaires/honos/answers
+    uri: http://testuser:testpass@rgoc.roqua.dev/api/v1/patients/123/questionnaires/honos/answers
     body: ''
     headers:
       accept:
@@ -11,13 +11,15 @@ http_interactions:
       - gzip, deflate
       user-agent:
       - Ruby
+      authorization:
+      - Basic dGVzdHVzZXI6dGVzdHBhc3M=
   response:
     status:
       code: 200
       message: OK
     headers:
       date:
-      - Thu, 12 Jan 2012 15:24:31 GMT
+      - Fri, 13 Jan 2012 14:58:41 GMT
       server:
       - Apache/2.2.20 (Ubuntu)
       x-powered-by:
@@ -25,18 +27,18 @@ http_interactions:
       x-ua-compatible:
       - IE=Edge
       etag:
-      - ! '"fb55d36d118ed0d82ea4c976a583d64c"'
+      - ! '"8dacf0db0641ec4786b03e49c77f8e47"'
       cache-control:
       - max-age=0, private, must-revalidate
       x-runtime:
-      - '0.365120'
+      - '0.589433'
       content-length:
-      - '2155'
+      - '401'
       status:
       - '200'
       content-type:
       - application/json
-    body: ! '[{"_id":"1239","active":true,"created_at":"2011-02-05T11:20:05Z","patient_id":"123","questionnaire_id":5,"questionnaire_key":"honos","test":null,"token":"9d87699c82ff64f9","updated_at":"2011-11-29T13:45:27Z","value":{},"value_by_values":{},"id":"1239","value_by_values":{},"scores":null,"is_completed":true},{"_id":"14097","active":true,"created_at":"2011-02-05T13:49:03Z","patient_id":"123","questionnaire_id":5,"questionnaire_key":"honos","test":null,"token":"ca871ceb4ec19a92","updated_at":"2011-11-29T13:46:26Z","value":{},"value_by_values":{},"id":"14097","value_by_values":{},"scores":null,"is_completed":true},{"_id":"15354","active":true,"created_at":"2011-03-17T11:07:19Z","patient_id":"123","questionnaire_id":5,"questionnaire_key":"honos","test":null,"token":"44a126e842541213","updated_at":"2011-11-29T13:46:29Z","value":{},"value_by_values":{},"id":"15354","value_by_values":{},"scores":null,"is_completed":true}]'
+    body: ! '[{"_id":"51801","active":true,"created_at":"2011-02-07T18:43:57Z","patient_id":"123","questionnaire_id":5,"questionnaire_key":"honos","test":null,"token":"3d89c98fa68361f6","updated_at":"2011-11-29T13:59:15Z","value":{"v_2":"a4","v_3":"a4","v_1":"a4"},"value_by_values":{"v_2":"3","v_3":"3","v_1":"3"},"id":"51801","value_by_values":{"v_2":"3","v_3":"3","v_1":"3"},"scores":null,"is_completed":false},{"_id":"51802","active":true,"created_at":"2011-02-07T18:43:57Z","patient_id":"123","questionnaire_id":5,"questionnaire_key":"honos","test":null,"token":"3d89c98fa68361f6","updated_at":"2011-11-29T13:59:15Z","value":{"v_2":"a4","v_3":"a4","v_1":"a4"},"value_by_values":{"v_2":"3","v_3":"3","v_1":"3"},"id":"51801","value_by_values":{"v_2":"3","v_3":"3","v_1":"3"},"scores":null,"is_completed":false},{"_id":"51803","active":true,"created_at":"2011-02-07T18:43:57Z","patient_id":"123","questionnaire_id":5,"questionnaire_key":"honos","test":null,"token":"3d89c98fa68361f6","updated_at":"2011-11-29T13:59:15Z","value":{"v_2":"a4","v_3":"a4","v_1":"a4"},"value_by_values":{"v_2":"3","v_3":"3","v_1":"3"},"id":"51801","value_by_values":{"v_2":"3","v_3":"3","v_1":"3"},"scores":null,"is_completed":false}]'
     http_version: '1.1'
-  recorded_at: Thu, 12 Jan 2012 15:24:32 GMT
+  recorded_at: Fri, 13 Jan 2012 14:58:41 GMT
 recorded_with: VCR 2.0.0.rc1
