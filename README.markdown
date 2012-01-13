@@ -2,6 +2,9 @@
 
 ![http://travis-ci.org/roqua/roqua-gem](https://secure.travis-ci.org/roqua/roqua-gem.png)
 
+Right now, the RoQua API is for internal use only, so you can't really do anything with this gem
+right now.
+
 ## Contributing to roqua-gem
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
