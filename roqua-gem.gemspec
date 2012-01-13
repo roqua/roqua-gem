@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "roqua-gem"
-  s.version = ""
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Marten Veldthuis"]
@@ -25,9 +25,11 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.markdown",
     "Rakefile",
+    "VERSION",
     "lib/roqua-gem.rb",
     "lib/roqua/answer.rb",
     "lib/roqua/site.rb",
+    "roqua-gem.gemspec",
     "spec/cassettes/RoQua_Site/_answers.yml",
     "spec/roqua/answer_spec.rb",
     "spec/roqua/site_spec.rb",
