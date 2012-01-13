@@ -1,6 +1,6 @@
 = roqua-gem
 
-{<img src="https://secure.travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].png" />}[http://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME]]
+{<img src="https://secure.travis-ci.org/roqua/roqua-gem.png" />}[http://travis-ci.org/roqua/roqua-gem]
 
 
 Description goes here.
