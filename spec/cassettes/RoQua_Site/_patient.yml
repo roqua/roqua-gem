@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://testuser:testpass@rgoc.roqua.dev/api/v1/patients/123
+    body: ''
+    headers:
+      accept:
+      - ! '*/*; q=0.5, application/xml'
+      accept-encoding:
+      - gzip, deflate
+      user-agent:
+      - Ruby
+      authorization:
+      - Basic dGVzdHVzZXI6dGVzdHBhc3M=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 14 Jan 2012 11:10:29 GMT
+      server:
+      - Apache/2.2.20 (Ubuntu)
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.9
+      x-ua-compatible:
+      - IE=Edge
+      etag:
+      - ! '"aafee8999d6204472eb25cae92e3c54b"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-runtime:
+      - '0.303538'
+      content-length:
+      - '763'
+      status:
+      - '200'
+      content-type:
+      - application/json
+    body: ! '{"active":true,"archived":false,"bsn":null,"created_at":"2010-07-10T18:08:12+02:00","description":null,"details":null,"epd_id":"123","faulty_login":0,"hashed_password":"","hashed_token":null,"id":12707,"idents":null,"key":null,"language":"nl","last_login":null,"login_lock":null,"loglevel":null,"password_window":null,"preferences":{"action":{"honos":{"value":"alarm","date":"2011-04-09T22:09:00Z"},"ervaringenvragenlijst-16":{"value":null,"date":"2011-06-15T11:28:50Z"},"hon65":{"value":"alarm","date":null}}},"research":null,"role_id":9,"salt":"-6161326080.0775395353331456","sent_wegweis_invitation_at":null,"terms":null,"tester":true,"token_expiry":null,"updated_at":"2012-01-01T14:44:51+01:00","user_name":"r12565623"}'
+    http_version: '1.1'
+  recorded_at: Sat, 14 Jan 2012 11:10:41 GMT
+recorded_with: VCR 2.0.0.rc1

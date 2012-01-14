@@ -24,4 +24,13 @@ describe RoQua::Site do
       answers[0].should be_an(RoQua::Answer)
     end
   end
+
+  describe "#patient" do
+    use_vcr_cassette
+    let(:patient) { site.patient("123") }
+
+    it "returns a patient" do
+      patient.should be_a(RoQua::Patient)
+    end
+  end
 end

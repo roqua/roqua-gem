@@ -4,3 +4,4 @@ require 'json'
 
 require 'roqua/site'
 require 'roqua/answer'
+require 'roqua/patient'

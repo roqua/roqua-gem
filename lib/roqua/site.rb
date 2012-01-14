@@ -19,5 +19,10 @@ module RoQua
       json = JSON.parse(response)
       json.map { |item| Answer.new(item) }
     end
+
+    def patient(id)
+      response = RestClient.get(url.to_s + "/patients/#{id}")
+      Patient.new(JSON.parse(response))
+    end
   end
 end
