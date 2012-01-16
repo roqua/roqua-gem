@@ -21,7 +21,7 @@ describe RoQua::Site do
     end
 
     it "should return Answer objects" do
-      answers[0].should be_an(RoQua::Answer)
+      answers[0].should be_a(RoQua::Answer)
     end
   end
 
